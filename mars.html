@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  name ="viewport" content = "width= device - width, initial-scale =1"> 
+<link rel="stylesheet" type="text/css" href="../css/Mars.css">
+<title>MARS UNKNOWN</title>
+<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/mars-planet.png"></head>
+<body>
+	<img src="https://img.icons8.com/color/48/000000/mars-planet.png"/>
+	<div class = "dropdown">
+
+		<button class =  "drpbtn"><strong>ON THIS PAGE</strong></button>
+		<div class="dropdown-content" style="left:0;">
+			<a href ="#">Facts to know about Mars</a>
+			<a href ="#">Human to Mars </a>
+			<a href ="#">Resourses</a>
+		</div></div>
+		<button class = "Overview"><strong>OVERVIEW</strong>
+			<a href ="#" ></a></button>
+			<button class = "gallery"><strong>GALLERY</strong>
+				<a href = "#"></a></button>
+<div class ="container">
+	
+	<div class="text"><strong>“Mars is there,<br> waiting to be reached.......”</strong><br><br></div>
+	<div class ="content"><p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System,<br>
+	 being larger than only Mercury. In English, Mars carries the name of the Roman god of war<br> and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide<br> prevalent on Mars's surface, which gives it a reddish appearance distinctive among the astronomical <br>bodies visible to the naked eye. Mars is a terrestrial planet with a thin atmosphere, with surface features<br> reminiscent of the impact craters of the Moon and the valleys, deserts and polar ice caps of Earth.</p></div>
+</div>
+<img src = "../images/mars1.jpg" class = "pic">
+<p id="demo"></p>
+	<script>
+function updateTime(){
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+    if (minutes < 10){
+        minutes = "0" + minutes
+    }
+    var t_str = hours + ":" + minutes + " ";
+    if(hours > 11){
+        t_str += "PM";
+    } else {
+        t_str += "AM";
+    }
+    document.getElementById('demo').innerHTML = t_str;
+}
+setInterval(updateTime, 1000);
+</script>
+</div>
+<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+<input name="sitesearch" type="hidden" value="">
+<input autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com" required="required"  type="text">
+<button class="button" type="submit">Search</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
